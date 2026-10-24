@@ -12,10 +12,10 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{header,.art,.contact,footer,.social,.paper-visual{display:none}.wrap{max-width:none;padding:0}.hero,.section{padding:20px 0}.hero,.paper,.background{display:block}.research-grid{gap:20px}body{background:white}.section{break-inside:avoid}h1{font-size:36px}}
 
-/* Display a portrait crop of the original photo without modifying the image. */
+/* Display the pre-cropped portrait with no additional zoom. */
 .art.portrait{aspect-ratio:4/5;width:100%;max-width:360px;justify-self:center;border-radius:160px 160px 8px 8px;background:#dce6e5;display:block}
-.portrait img{position:absolute;width:210.5%;max-width:none;height:auto;left:-100%;top:-95%}
-@media(max-width:600px){.art.portrait{max-width:310px;aspect-ratio:4/5;margin:0 auto}.portrait img{width:210.5%;height:auto}}
+.portrait img{position:absolute;width:100%;max-width:100%;height:100%;left:0;top:0;object-fit:cover;object-position:center 42%}
+@media(max-width:600px){.art.portrait{max-width:310px;aspect-ratio:4/5;margin:0 auto}.portrait img{width:100%;height:100%}}
 @media print{.art.portrait{display:none}}
 </style>
 </head>
@@ -24,7 +24,7 @@
 <header><div class="wrap nav"><a class="brand" href="#main">Jui-Feng Chi<span>RESEARCH &amp; EXPLORATION</span></a><nav aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#background">About</a></nav></div></header>
 <main id="main" class="wrap">
 <section class="hero" aria-labelledby="name"><div><div class="eyebrow">Purdue University · VIPER Lab</div><h1 id="name">Jui-Feng Chi</h1><p class="alias">You can call me Raymond.</p><p class="intro">Understanding the visual world,<br>one meaningful detail at a time.</p><p class="bio">I am a graduate student in Electrical and Computer Engineering at Purdue University, advised by Prof. Fengqing (Maggie) Zhu. My research brings together <strong>computer vision</strong> and <strong>vision-language models</strong> to understand food and the world around us.</p><div class="social"><a href="https://scholar.google.com/citations?user=73a2F44AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://github.com/aj71490" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/jui-feng-chi-21755236b/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:chi96@purdue.edu">Email ↗</a></div></div>
-<div class="art portrait"><img src="IMG_8272.JPG" alt="Jui-Feng Chi at the Golden Gate Bridge" fetchpriority="high"></div></section>
+<div class="art portrait"><img src="IMG_8272-2.jpg" alt="Jui-Feng Chi at the Golden Gate Bridge" fetchpriority="high"></div></section>
 <div class="affiliation"><div><strong>Graduate Researcher</strong> &nbsp; / &nbsp; Electrical &amp; Computer Engineering</div><div>West Lafayette, Indiana &nbsp; · &nbsp; Originally from Taiwan</div></div>
 <section id="research" class="section"><div class="section-head"><div class="section-title"><span class="number">01</span><h2>What I work on</h2></div><span class="status">Research interests &amp; ongoing directions</span></div><div class="research-grid"><article class="research-item"><span class="topic">VISION + LANGUAGE</span><h3>Learning across modalities</h3><p>Connecting visual evidence with semantic knowledge through multimodal fusion, grounded captions, and data alignment.</p></article><article class="research-item"><span class="topic">FINE-GRAINED PERCEPTION</span><h3>Understanding food</h3><p>Recognizing ingredients and segmenting food images to support more informative, image-based dietary assessment.</p></article><article class="research-item"><span class="topic">AGENTIC PERCEPTION</span><h3>Reasoning with tools</h3><p>Exploring how vision-language agents can use visual tools and assess their reliability for nutrition estimation.</p></article></div></section>
 <section id="publications" class="section"><div class="section-head"><div class="section-title"><span class="number">02</span><h2>Selected publications</h2></div><a class="small-link" href="https://scholar.google.com/citations?user=73a2F44AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar ↗</a></div><div class="papers">
